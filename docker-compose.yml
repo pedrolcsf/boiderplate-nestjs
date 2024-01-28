@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: boilerplate-nestjs-postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: boilerplate-nestjs-postgres
+      PGDATA: /data/postgres # this is important to persist data
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data/pg:/data/postgres # this is important to persist data
