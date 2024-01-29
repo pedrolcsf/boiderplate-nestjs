@@ -1,8 +1,11 @@
 {
   "name": "clean",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "engines": {
+    "node": ">=21.5.0"
+  },
+  "description": "This repository provides a concise NestJS boilerplate with secure JWT authentication using RSA256 and comprehensive testing using Vitest. Accelerate your Node.js application development with a robust foundation for secure authentication and reliable testing.",
+  "author": "Pedro Ferreira <pedroclsferreira@gmail.com>",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
