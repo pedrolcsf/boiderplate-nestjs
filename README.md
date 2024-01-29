@@ -63,7 +63,7 @@ Technologies that I used to develop this boiderplate
 
 **Follow the steps below**
 
-**generate private and public key (b64)**
+**_generate private and public key (b64)_**
 
 ```bash
   # generate private key (b64)
@@ -75,26 +75,26 @@ Technologies that I used to develop this boiderplate
   $ openssl base64 -A -in public_key.pem -out public_key_base64.txt
 ```
 
-**set private and public keys in .env**
+**_set private and public keys in .env_**
 
 ```bash
   JWT_PRIVATE_KEY="private_key"
   JWT_PUBLIC_KEY="public_key"
 ```
 
-**set port in .env**
+**_set port in .env_**
 
 ```bash
   PORT=3333
 ```
 
-**run db in docker with docker compose**
+**_run db in docker with docker compose_**
 
 ```bash
   $ docker compose up -d
 ```
 
-**run migartions and start prima studio**
+**_run migartions and start prima studio_**
 
 ```bash
   $ npx prisma migrate dev
@@ -103,7 +103,7 @@ Technologies that I used to develop this boiderplate
   $ npx prisma studio
 ```
 
-**run server**
+**_run server_**
 
 ```bash
   # initialize the server (open in http:localhost:3333)
