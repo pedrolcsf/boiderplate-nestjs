@@ -39,4 +39,5 @@ lerna-debug.log*
 data
 
 # Keys
+/*.pem
 *.pem
