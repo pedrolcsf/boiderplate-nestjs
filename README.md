@@ -31,7 +31,7 @@ Technologies that I used to develop this boiderplate
 
 - [JavaScript]([])
 - [Node.js]([https://nodejs.org/en])
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript]([https://www.typescriptlang.org/])
 - [Nest.js]([https://nestjs.com/])
 - [Vitest]([https://vitest.dev/])
 - [Prisma]([https://www.prisma.io/])
@@ -55,7 +55,15 @@ Technologies that I used to develop this boiderplate
   $ git clone https://github.com/pedrolcsf/boiderplate-nestjs.git
 ```
 
+**install libs**
+
+```bash
+  $ npm i
+```
+
 **Follow the steps below**
+
+**generate private and public key (b64)**
 
 ```bash
   # generate private key (b64)
@@ -65,26 +73,39 @@ Technologies that I used to develop this boiderplate
   # generate public key (b64)
   $ openssl rsa -pubout -in private_key.pem -out public_key.pem
   $ openssl base64 -A -in public_key.pem -out public_key_base64.txt
+```
 
-  # get the b64 and paste to .env
+**set private and public keys in .env**
+
+```bash
   JWT_PRIVATE_KEY="private_key"
   JWT_PUBLIC_KEY="public_key"
+```
 
-  # set port in .env
+**set port in .env**
+
+```bash
   PORT=3333
+```
 
-  # run db in docker with docker compose
+**run db in docker with docker compose**
+
+```bash
   $ docker compose up -d
+```
 
-  # run migrations
+**run migartions and start prima studio**
+
+```bash
   $ npx prisma migrate dev
 
   # run prisma studio
   $ npx prisma studio
+```
 
-  # install the dependencies
-  $ npm i
+**run server**
 
+```bash
   # initialize the server (open in http:localhost:3333)
   $ npm run start:dev
 ```
