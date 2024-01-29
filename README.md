@@ -110,6 +110,13 @@ Technologies that I used to develop this boiderplate
   $ npm run start:dev
 ```
 
+**_run tests_**
+
+```bash
+  # e2e
+  $ npm run test:e2e
+```
+
 ---
 
 Made with ♥ by Pedro Ferreira :wave: [Get in touch!](https://www.linkedin.com/in/pedrolcsf/)
